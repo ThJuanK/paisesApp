@@ -1,0 +1,22 @@
+<h2>Por Capital</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <!-- searchBox -->
+    Busquedas
+    <app-search-box
+      (onDebounce)="searchByCapital($event)"
+      (onValue)="searchByCapital($event)"
+      [_initialValue] = "initialValue"
+      placeholder = "buscar por capital..."></app-search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
+    <app-pais-table [paises] = "resultados"></app-pais-table>
+  </div>
+</div>

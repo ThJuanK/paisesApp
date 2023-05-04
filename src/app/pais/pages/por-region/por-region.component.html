@@ -1,0 +1,23 @@
+<h2>Por continente</h2>
+<hr>
+
+<div class="row">
+  <div class="col text-center">
+    <!-- searchBox -->
+
+    <button *ngFor = "let continente of continentes; let i= index"
+            type = "button"
+            [ngClass] = "{'active': regionSeleccionada == continente}"
+            class = "btn mx-2 btn-outline-primary animate__fast animate__animated animate__fadeIn"
+            (click) = "searchByRegion(continentes_busqueda[i])">{{continente}}</button>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <app-loading-spinner *ngIf = "isLoading"></app-loading-spinner>
+    <app-pais-table [paises] = "resultados"></app-pais-table>
+  </div>
+</div>
