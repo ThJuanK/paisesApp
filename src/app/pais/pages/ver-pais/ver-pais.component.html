@@ -30,6 +30,12 @@
         <li class="list-group-item">
           <strong>Población:</strong> {{country.population}}
         </li>
+        <li class="list-group-item">
+          <strong>Continente:</strong> {{country.region}}
+        </li>
+        <li class="list-group-item">
+          <strong>Paises adyacentes: </strong> <p class = "fronteras" *ngFor="let adyacente of country.borders"><a  [routerLink]="['/pais/by', adyacente]">{{adyacente}}</a>, </p>
+        </li>
       </ul>
     </div>
   </div>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router, RouterModule } from '@angular/router';
 import { PaisService } from '../../services/pais-service.service';
 import { Country } from '../../interfaces/country.interface';
-import { switchMap } from 'rxjs';
+import { delay, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-ver-pais',
@@ -29,15 +29,13 @@ export class VerPaisComponent implements OnInit {
 
         this.country = resp
 
-        console.log(this.country)
-
         return
 
       })
 
 
-  }
 
+  }
 
 
 }
