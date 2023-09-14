@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
 
+### Aplicación de angular donde podemos buscar los paises o ciudades por diferentes filtros y busquedas. Se hace uso del API de [REST COUNTRIES](https://restcountries.com/) Aqui puse en practica el manejo de la información con su debido tipado, tambien los operadores de rxjs y diferentes capacidades relacionadas al consumo de APIs.
+### Se puede descargar el repositorio o acceder a él mediante su despliegue en [GitHub Pages](https://thjuank.github.io/paisesApp/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
